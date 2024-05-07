@@ -30,6 +30,11 @@ const styles = StyleSheet.create({
     color: COLOR_PRIMARY,
     textDecorationLine: 'underline',
   },
+  langTouch: {
+    position: 'absolute',
+    top: 50,
+    left: 20,
+  }
 });
 
 export default styles;

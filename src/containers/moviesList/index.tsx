@@ -49,6 +49,9 @@ const MoviesListPage = ({ navigation }) => {
     [dispatch]
   )
 
+  /**
+   * callPullToRefresh
+   */
   const callPullToRefresh = () => {
     setPage(1)
     handleFetchPopularMovies(1, true)
@@ -114,7 +117,7 @@ const MoviesListPage = ({ navigation }) => {
         headerTitle={strings('common.movies.popularMovies')}
         navigation={navigation}
       />
-      <View style={{ marginTop: 10 }}>
+      <View style={styles.flatListContainer}>
         <FlatList
           ref={flatlistRef}
           numColumns={2}

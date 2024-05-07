@@ -32,12 +32,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
     errors,
     touched,
     isValid,
-    validateForm,
   } = useFormik({
     validationSchema: loginValidationSchema(),
     initialValues: {
-      email: !__DEV__ ? 'test@gmail.com' : '',
-      password: !__DEV__ ? 'password1' : '',
+      email: '',
+      password: '',
     },
     onSubmit: (userValues) => {
       handelUserLogin(userValues)
@@ -75,13 +74,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       textInputName: 'email',
       errorMessage: errors?.email,
       onChangeText: (text) => {
-        validateForm()
         handleChange('email')(text)
       },
       onBlur: () => {
         setFieldTouched('email')
       },
-      isErrorMsgRequired: touched?.email && errors?.email,
+      isErrorMsgRequired: errors?.email,
     }
   }
 
@@ -102,23 +100,21 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       onBlur: () => {
         setFieldTouched('password')
       },
-      isErrorMsgRequired: touched?.password && errors?.password,
+      isErrorMsgRequired: errors?.password,
     }
   }
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={{
-          position: 'absolute',
-          top: 50,
-          left: 10,
-        }}
-        onPress={changeAppLang}
-      >
+      {/*  */}
+      <TouchableOpacity style={styles.langTouch} onPress={changeAppLang}>
         <Text style={styles.languageText}>{strings('common.language')}</Text>
       </TouchableOpacity>
+
+      {/*  */}
       <Text style={styles.title}>{strings('auth.login.title')}</Text>
+
+      {/*  */}
       <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <KeyboardAvoidingView
           style={styles.avoidingView}
@@ -137,7 +133,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
             onPress={handleSubmit}
             disabled={!isFormValid}
           />
-
           {/*  */}
         </KeyboardAvoidingView>
       </TouchableWithoutFeedback>

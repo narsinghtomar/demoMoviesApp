@@ -1,7 +1,7 @@
 /**
  * MoviesListPage styles
  */
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
   scrollContent: {
     paddingVertical: 5,
   },
+  flatListContainer: {
+    marginTop: 10
+  }
 });
 
 export default styles;

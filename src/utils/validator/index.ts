@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { strings } from '../../i18n';
-import { phoneNumberRegex } from './validationRegex';
+import { emailRegex, phoneNumberRegex } from './validationRegex';
 
 // loginValidationSchema
 export const loginValidationSchema = () =>
@@ -8,7 +8,7 @@ export const loginValidationSchema = () =>
     email: yup
       .string()
       .required(strings('common.validation.emailRequired'))
-      .email(strings('common.validation.validEmail')),
+      .matches(emailRegex, strings('common.validation.validEmail')),
     password: yup
       .string()
       .min(8, strings('common.validation.minCharPass'))
