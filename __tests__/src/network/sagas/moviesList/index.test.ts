@@ -8,7 +8,7 @@ import {
   fetchPopularMoviesRequest,
   fetchPopularMoviesSuccess,
   fetchPopularMoviesFailure,
-} from '../../../../../src/redux/reducers/moviesList'
+} from '../../../../../src/redux/reducers/moviesListReducer'
 
 describe('watchMoviesList Saga', () => {
   const genObject = watchMoviesList()

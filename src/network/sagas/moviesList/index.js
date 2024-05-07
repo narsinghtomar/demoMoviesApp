@@ -12,7 +12,7 @@ import {
   fetchPopularMoviesRequest,
   fetchPopularMoviesSuccess,
   fetchPopularMoviesFailure,
-} from '../../../redux/reducers/moviesList'
+} from '../../../redux/reducers/moviesListReducer'
 
 /**
  * fetchMoviesList

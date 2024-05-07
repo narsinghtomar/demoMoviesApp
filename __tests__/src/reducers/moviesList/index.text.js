@@ -4,7 +4,7 @@ import moviesListReducer, {
   fetchPopularMoviesSuccess,
   fetchPopularMoviesFailure,
   fetchPopularMoviesReset,
-} from '../../../../src/redux/reducers/moviesList'
+} from '../../../../src/redux/reducers/moviesListReducer'
 
 describe('moviesListSlice reducer', () => {
   it('should handle fetchPopularMoviesRequest', () => {

@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { View, FlatList, ActivityIndicator, RefreshControl } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchPopularMoviesRequest } from '../../redux/reducers/moviesList'
+import { fetchPopularMoviesRequest } from '../../redux/reducers/moviesListReducer'
 import { isRTL, strings } from '../../i18n'
 import { generateHeaders } from '../../utils/constants/apiHeaders'
 import MoviesListItem from './moviesListItem'

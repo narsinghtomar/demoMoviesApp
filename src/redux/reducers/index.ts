@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import moviesListReducer from './moviesList';
+import moviesListReducer from './moviesListReducer';
 import authReducer from './authReducer';
 
 /**
