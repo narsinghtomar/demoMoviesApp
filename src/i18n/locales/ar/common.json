@@ -1,0 +1,15 @@
+{
+  "appName": "Demo",
+  "language": "English",
+  "validation": {
+    "emailRequired": "إن البريد الإلكترونى حقل مطلوب",
+    "validEmail": "الرجاء إدخال بريد إلكتروني صحيح",
+    "passwordRequired": "كلمة المرور هي حقل مطلوب",
+    "minCharPass": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+    "maxCharPass": "يجب أن تتكون كلمة المرور من 15 حرفًا على الأكثر",
+    "specialCharPass": "يجب أن تحتوي كلمة المرور على حرف كبير واحد وحرف خاص واحد على الأقل"
+  },
+  "movies": {
+    "popularMovies": "أفلام شعبية"
+  }
+}

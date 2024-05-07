@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesListPage component renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <RCTSafeAreaView
+    style={
+      [
+        {
+          "backgroundColor": "#EB8D0C",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignContent": "center",
+            "alignItems": "center",
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "paddingBottom": 8,
+            "paddingTop": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "alignSelf": "center",
+              "color": "#FFFFFF",
+              "flex": 1,
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "justifyContent": "center",
+              "marginLeft": 0,
+              "paddingRight": 16,
+              "textAlign": "center",
+            },
+            {},
+          ]
+        }
+      >
+        [missing "en.common.movies.popularMovies" translation]
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "bottom": 2,
+            "opacity": 1,
+            "padding": 5,
+            "position": "absolute",
+            "right": 10,
+          }
+        }
+      >
+        <Image
+          resizeMode="contain"
+          source={
+            {
+              "testUri": "../../../src/assets/images/logout/logout.png",
+            }
+          }
+          style={
+            {
+              "height": 28,
+              "tintColor": "#FFFFFF",
+              "width": 28,
+            }
+          }
+        />
+      </View>
+    </View>
+  </RCTSafeAreaView>
+  <View
+    style={
+      {
+        "marginTop": 10,
+      }
+    }
+  >
+    <RCTScrollView
+      ListFooterComponent={[Function]}
+      contentContainerStyle={
+        {
+          "paddingVertical": 5,
+        }
+      }
+      data={[]}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={5}
+      onContentSizeChange={[Function]}
+      onEndReached={[Function]}
+      onEndReachedThreshold={0.5}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      refreshControl={
+        <RefreshControlMock
+          onRefresh={[Function]}
+        />
+      }
+      removeClippedSubviews={true}
+      renderItem={[Function]}
+      scrollEventThrottle={0.0001}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+      windowSize={10}
+    >
+      <RCTRefreshControl />
+      <View>
+        <View
+          onLayout={[Function]}
+        >
+          <ActivityIndicator
+            size="large"
+          />
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

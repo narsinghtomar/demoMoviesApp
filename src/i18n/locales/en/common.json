@@ -1,0 +1,15 @@
+{
+  "appName": "Demo",
+  "language": "عربي",
+  "validation": {
+    "emailRequired": "Email is a required field",
+    "validEmail": "Please enter valid email",
+    "passwordRequired": "Password is a required field",
+    "minCharPass": "Password must be at least 8 characters",
+    "maxCharPass": "Password must be at most 15 characters",
+    "specialCharPass": "Password must contain at least one uppercase letter and one special character"
+  },
+  "movies": {
+    "popularMovies": "Popular Movies"
+  }
+}

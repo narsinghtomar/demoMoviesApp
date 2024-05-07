@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<RCTSafeAreaView
+  style={
+    [
+      {
+        "backgroundColor": "#EB8D0C",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignContent": "center",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 8,
+          "paddingTop": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "bottom": 2,
+          "opacity": 1,
+          "padding": 5,
+          "position": "absolute",
+          "right": 10,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          {
+            "testUri": "../../../src/assets/images/logout/logout.png",
+          }
+        }
+        style={
+          {
+            "height": 28,
+            "tintColor": "#FFFFFF",
+            "width": 28,
+          }
+        }
+      />
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

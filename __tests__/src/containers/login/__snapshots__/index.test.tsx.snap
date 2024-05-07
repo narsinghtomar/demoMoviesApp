@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage component renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "left": 10,
+        "opacity": 1,
+        "position": "absolute",
+        "top": 50,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#223E7F",
+          "fontSize": 18,
+          "fontWeight": "600",
+          "textDecorationLine": "underline",
+        }
+      }
+    >
+      [missing "en.common.language" translation]
+    </Text>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#223E7F",
+        "fontSize": 34,
+        "fontWeight": "800",
+        "marginBottom": 20,
+        "marginTop": -50,
+        "textAlign": "center",
+      }
+    }
+  >
+    [missing "en.auth.login.title" translation]
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessible={false}
+    focusable={true}
+    onClick={[Function]}
+    onLayout={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "paddingBottom": 0,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "center",
+              "justifyContent": "center",
+              "width": 675,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            [
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "marginTop": 15,
+                "textAlign": "left",
+              },
+              undefined,
+            ]
+          }
+        >
+          [missing "en.auth.login.email" translation]
+        </Text>
+        <TextInput
+          autoCapitalize="none"
+          autoCorrect={false}
+          editable={true}
+          name="email"
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          placeholder="[missing "en.auth.login.enterEmail" translation]"
+          placeholderTextColor="#908E8E"
+          returnKeyType="default"
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderRadius": 8,
+                "borderWidth": 0.5,
+                "color": "#223E7F",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginVertical": 5,
+                "minHeight": 45,
+                "paddingHorizontal": 14,
+                "paddingVertical": 12,
+                "textAlign": "left",
+              },
+              {
+                "borderColor": "#999999",
+              },
+            ]
+          }
+          textAlign="left"
+          value=""
+        />
+      </View>
+    </View>
+    <View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "center",
+              "justifyContent": "center",
+              "width": 675,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            [
+              {
+                "color": "#000000",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "marginTop": 15,
+                "textAlign": "left",
+              },
+              undefined,
+            ]
+          }
+        >
+          [missing "en.auth.login.password" translation]
+        </Text>
+        <TextInput
+          autoCapitalize="none"
+          autoCorrect={false}
+          editable={true}
+          name="password"
+          onBlur={[Function]}
+          onChangeText={[Function]}
+          placeholder="[missing "en.auth.login.enterPassword" translation]"
+          placeholderTextColor="#908E8E"
+          returnKeyType="default"
+          secureTextEntry={true}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderRadius": 8,
+                "borderWidth": 0.5,
+                "color": "#223E7F",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginVertical": 5,
+                "minHeight": 45,
+                "paddingHorizontal": 14,
+                "paddingVertical": 12,
+                "textAlign": "left",
+              },
+              {
+                "borderColor": "#999999",
+              },
+            ]
+          }
+          textAlign="left"
+          value=""
+        />
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#908E8E",
+          "borderRadius": 4,
+          "height": 45,
+          "justifyContent": "center",
+          "marginTop": 50,
+          "opacity": 1,
+          "paddingHorizontal": 13,
+          "width": 375,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "alignSelf": "center",
+                "color": "#FFFFFF",
+                "fontSize": 18,
+                "fontWeight": "500",
+                "letterSpacing": 0.25,
+                "paddingRight": 10,
+                "textAlign": "center",
+                "textAlignVertical": "center",
+              },
+              undefined,
+            ]
+          }
+        >
+          [missing "en.auth.login.login" translation]
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

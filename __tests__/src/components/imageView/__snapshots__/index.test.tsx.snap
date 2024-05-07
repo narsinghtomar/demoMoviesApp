@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageView component renders correctly 1`] = `
+<View
+  activeOpacity={0.8}
+  hitSlop={
+    {
+      "bottom": 6,
+      "left": 6,
+      "right": 6,
+      "top": 6,
+    }
+  }
+  style={
+    [
+      {
+        "alignSelf": "center",
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    resizeMode="contain"
+    style={
+      [
+        {
+          "height": "100%",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;

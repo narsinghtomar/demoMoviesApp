@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField component renders correctly 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "justifyContent": "center",
+          "width": 675,
+        },
+        undefined,
+      ]
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      editable={true}
+      onChangeText={[Function]}
+      placeholderTextColor="#908E8E"
+      returnKeyType="default"
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderRadius": 8,
+            "borderWidth": 0.5,
+            "color": "#223E7F",
+            "fontSize": 18,
+            "fontWeight": "400",
+            "marginVertical": 5,
+            "minHeight": 45,
+            "paddingHorizontal": 14,
+            "paddingVertical": 12,
+            "textAlign": "left",
+          },
+          {
+            "borderColor": "#999999",
+          },
+        ]
+      }
+      textAlign="left"
+    />
+  </View>
+</View>
+`;
