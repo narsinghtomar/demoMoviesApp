@@ -1,0 +1,8 @@
+build/*.ts
+config/*.ts
+coverage/*.ts
+coverage/*
+jest/*.ts
+__tests__/*
+__tests__/*.ts
+metro.config.js

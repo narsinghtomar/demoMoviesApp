@@ -73,6 +73,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       value: values?.email,
       textInputName: 'email',
       errorMessage: errors?.email,
+      keyboardType: 'email-address',
       onChangeText: (text) => {
         handleChange('email')(text)
       },

@@ -3,12 +3,12 @@ module.exports = {
   notify: true,
   collectCoverage: true,
   coverageReporters: ['json', 'html'],
-  setupFiles: ['<rootDir>/jest/setup.js'],
+  setupFiles: ['<rootDir>/jest/setup.ts'],
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?@?react-native|@react-navigation|@react-redux)/',
   ],
   testPathIgnorePatterns: [
-    '<rootDir>/src/components/', // Updated to ignore entire directory
+    '<rootDir>/src/components/',
     '<rootDir>/src/utils/',
     '<rootDir>/src/i18n'
   ],

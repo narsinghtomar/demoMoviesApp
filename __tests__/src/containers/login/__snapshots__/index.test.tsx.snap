@@ -134,6 +134,7 @@ exports[`LoginPage component renders correctly 1`] = `
           autoCapitalize="none"
           autoCorrect={false}
           editable={true}
+          keyboardType="email-address"
           name="email"
           onBlur={[Function]}
           onChangeText={[Function]}
