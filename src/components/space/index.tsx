@@ -1,6 +1,6 @@
-import React from 'react'
-import { View, ViewStyle } from 'react-native'
-import { COLOR_TRANSPARENT } from '../../utils/colors'
+import React from 'react';
+import { View, ViewStyle } from 'react-native';
+import { COLOR_TRANSPARENT } from '../../utils/colors';
 
 interface SpaceProps {
   height?: number;
@@ -17,9 +17,9 @@ const Space: React.FC<SpaceProps> = ({
     height: height,
     width: width,
     backgroundColor: backgroundColor,
-  }
+  };
 
-  return <View style={spaceStyle} />
-}
+  return <View style={spaceStyle} />;
+};
 
-export default Space
+export default Space;

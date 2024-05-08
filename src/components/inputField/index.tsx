@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   TextInput,
   Text,
@@ -7,10 +7,10 @@ import {
   StyleProp,
   ViewStyle,
   TextStyle,
-} from 'react-native'
-import { COLOR_RED, COLOR_GRAY, COLOR_GRAY_999 } from '../../utils/colors'
-import styles from './styles'
-import { isRTL } from '../../i18n'
+} from 'react-native';
+import { COLOR_RED, COLOR_GRAY, COLOR_GRAY_999 } from '../../utils/colors';
+import styles from './styles';
+import { isRTL } from '../../i18n';
 
 interface InputFieldProps extends TextInputProps {
   textInputName?: string
@@ -65,8 +65,8 @@ const InputField: React.FC<InputFieldProps> = ({
     ? secureTextEntry
       ? secureInput
       : inputBoxStyle
-    : { ...styles.commonInputBox, ...inputBoxStyle }
-  const editableProps = isEditable !== null ? editable : true
+    : { ...styles.commonInputBox, ...inputBoxStyle };
+  const editableProps = isEditable !== null ? editable : true;
 
   return (
     <View>
@@ -92,7 +92,7 @@ const InputField: React.FC<InputFieldProps> = ({
           ]}
           secureTextEntry={secureTextEntry}
           onChangeText={(text) => {
-            onChangeText && onChangeText(text) // Added null check
+            onChangeText && onChangeText(text); // Added null check
           }}
           onBlur={onBlur}
           value={value}
@@ -117,7 +117,7 @@ const InputField: React.FC<InputFieldProps> = ({
         )}
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default InputField
+export default InputField;

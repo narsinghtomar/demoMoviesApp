@@ -1,15 +1,15 @@
 /**
  * MoviesListItem
  */
-import React from 'react'
-import { View, TouchableOpacity, Text } from 'react-native'
-import { ImageView } from '../../../components'
-import { getCompleteUrl } from '../../../utils/baseUrl'
-import { styles } from './styles'
+import React from 'react';
+import { View, TouchableOpacity, Text } from 'react-native';
+import { ImageView } from '../../../components';
+import { getCompleteUrl } from '../../../utils/baseUrl';
+import { styles } from './styles';
 
 const MoviesListItem = (props) => {
-  const { item, onItemPress, index } = props || {}
-  const { title, poster_path, id } = item || {}
+  const { item, onItemPress, index } = props || {};
+  const { title, poster_path, id } = item || {};
 
   return (
     <TouchableOpacity
@@ -21,7 +21,7 @@ const MoviesListItem = (props) => {
       <View style={styles.itemStyle(index)}>
         <ImageView
           url={getCompleteUrl(poster_path)}
-          resizeMode='cover'
+          resizeMode="cover"
           style={styles.imgView}
           containerstyle={styles.imgView}
         />
@@ -32,7 +32,7 @@ const MoviesListItem = (props) => {
         </View>
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default MoviesListItem
+export default MoviesListItem;

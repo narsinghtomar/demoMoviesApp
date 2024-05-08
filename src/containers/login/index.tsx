@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   View,
   Text,
@@ -6,22 +6,22 @@ import {
   KeyboardAvoidingView,
   Keyboard,
   TouchableOpacity,
-} from 'react-native'
-import { useDispatch } from 'react-redux'
-import { Button, InputField } from '../../components'
-import { changeAppLang, isIOS } from '../../utils/helper'
-import { loginValidationSchema } from '../../utils/validator'
-import { useFormik } from 'formik'
-import { strings } from '../../i18n'
-import { setAuthCompleted, setUserInfo } from '../../redux/reducers/authReducer'
-import styles from './styles'
+} from 'react-native';
+import { useDispatch } from 'react-redux';
+import { Button, InputField } from '../../components';
+import { changeAppLang, isIOS } from '../../utils/helper';
+import { loginValidationSchema } from '../../utils/validator';
+import { useFormik } from 'formik';
+import { strings } from '../../i18n';
+import { setAuthCompleted, setUserInfo } from '../../redux/reducers/authReducer';
+import styles from './styles';
 
 interface LoginPageProps {
   navigation: any
 }
 
-const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
-  const dispatch = useDispatch() // Initialize dispatch
+const LoginPage: React.FC<LoginPageProps> = () => {
+  const dispatch = useDispatch(); // Initialize dispatch
 
   // useFormik
   const {
@@ -39,14 +39,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       password: '',
     },
     onSubmit: (userValues) => {
-      handelUserLogin(userValues)
-      Keyboard.dismiss()
+      handelUserLogin(userValues);
+      Keyboard.dismiss();
     },
     validateOnChange: true,
-  })
+  });
 
   // Determine if the form is valid based on the isValid property
-  const isFormValid = isValid && Object.keys(touched).length > 0
+  const isFormValid = isValid && Object.keys(touched).length > 0;
 
   /**
    * handelUserLogin
@@ -58,10 +58,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
     const loginData = {
       username: userValues?.email,
       password: userValues?.password,
-    }
-    dispatch(setAuthCompleted())
-    dispatch(setUserInfo(loginData))
-  }
+    };
+    dispatch(setAuthCompleted());
+    dispatch(setUserInfo(loginData));
+  };
 
   /**
    * emailProps
@@ -75,14 +75,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       errorMessage: errors?.email,
       keyboardType: 'email-address',
       onChangeText: (text) => {
-        handleChange('email')(text)
+        handleChange('email')(text);
       },
       onBlur: () => {
-        setFieldTouched('email')
+        setFieldTouched('email');
       },
       isErrorMsgRequired: errors?.email,
-    }
-  }
+    };
+  };
 
   /**
    * passwordProps
@@ -96,14 +96,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
       errorMessage: errors?.password,
       secureTextEntry: true,
       onChangeText: (text) => {
-        handleChange('password')(text)
+        handleChange('password')(text);
       },
       onBlur: () => {
-        setFieldTouched('password')
+        setFieldTouched('password');
       },
       isErrorMsgRequired: errors?.password,
-    }
-  }
+    };
+  };
 
   return (
     <View style={styles.container}>
@@ -138,7 +138,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ navigation }) => {
         </KeyboardAvoidingView>
       </TouchableWithoutFeedback>
     </View>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;

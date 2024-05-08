@@ -25,16 +25,16 @@ const MoviesListPage = ({ navigation }) => {
 
   useEffect(() => {
     handleFetchPopularMovies(1)
-  }, [])
+  }, [handleFetchPopularMovies])
 
   /**
    * API Calls
    * Fetch Popular Movies
    */
   const handleFetchPopularMovies = useCallback(
-    async (page: number, isRefresh = false) => {
+    async (_page: number, isRefresh = false) => {
       const bodyData = {
-        page: page,
+        page: _page,
         language: isRTL() ? AR : EN_US,
       }
       const headers = await generateHeaders()
@@ -85,7 +85,13 @@ const MoviesListPage = ({ navigation }) => {
         handleFetchPopularMovies(nextPage)
       }
     },
-    [setPage, page]
+    [
+      setPage,
+      page,
+      isMoviesPageFinished,
+      isMoviesPaginating,
+      handleFetchPopularMovies,
+    ]
   )
 
   /**

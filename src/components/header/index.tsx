@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   SafeAreaView,
   View,
@@ -8,11 +8,11 @@ import {
   StyleProp,
   ViewStyle,
   TextStyle,
-} from 'react-native'
-import { useDispatch } from 'react-redux'
-import { IMAGES } from '../../assets'
-import { styles } from './styles'
-import { resetAuthCompleted } from '../../redux/reducers/authReducer'
+} from 'react-native';
+import { useDispatch } from 'react-redux';
+import { IMAGES } from '../../assets';
+import { styles } from './styles';
+import { resetAuthCompleted } from '../../redux/reducers/authReducer';
 
 interface HeaderProps {
   headerTitle?: string
@@ -36,11 +36,11 @@ const Header: React.FC<HeaderProps> = ({
   customHeaderContainerStyle,
   isShowLogOut = true,
 }) => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const logOut = () => {
-    dispatch(resetAuthCompleted())
-  }
+    dispatch(resetAuthCompleted());
+  };
 
   return (
     <SafeAreaView style={[styles.safeAreaView, customHeaderContainerStyle]}>
@@ -55,13 +55,13 @@ const Header: React.FC<HeaderProps> = ({
             <Image
               style={styles.logOutStyle}
               source={IMAGES.LOGOUT}
-              resizeMode='contain'
+              resizeMode="contain"
             />
           </TouchableOpacity>
         )}
       </View>
     </SafeAreaView>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

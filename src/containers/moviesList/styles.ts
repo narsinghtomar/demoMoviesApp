@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   flatListContainer: {
-    marginTop: 10
-  }
+    marginTop: 10,
+  },
 });
 
 export default styles;

@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import {
   View,
   Image,
   TouchableOpacity,
   TouchableOpacityProps,
-} from 'react-native'
-import FastImage from 'react-native-fast-image'
-import styles from './styles'
+} from 'react-native';
+import FastImage from 'react-native-fast-image';
+import styles from './styles';
 
 interface ImageViewProps extends TouchableOpacityProps {
   containerstyle?: any
@@ -33,8 +33,8 @@ const ImageView: React.FC<ImageViewProps> = ({
   onPress,
   activeOpacity = 0.8,
 }) => {
-  const imgAlign = isCentered ? 'center' : 'flex-start'
-  const ViewWrapper = isClickable ? TouchableOpacity : View
+  const imgAlign = isCentered ? 'center' : 'flex-start';
+  const ViewWrapper = isClickable ? TouchableOpacity : View;
 
   return (
     <ViewWrapper
@@ -60,7 +60,7 @@ const ImageView: React.FC<ImageViewProps> = ({
         />
       )}
     </ViewWrapper>
-  )
-}
+  );
+};
 
-export default ImageView
+export default ImageView;

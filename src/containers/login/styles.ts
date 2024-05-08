@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 50,
     left: 20,
-  }
+  },
 });
 
 export default styles;

@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import {
   TouchableOpacity,
   Text,
   View,
   TouchableOpacityProps,
-} from 'react-native'
-import { styles } from './styles'
-import { COLOR_SECONDARY } from '../../utils/colors'
-import ButtonLoader from '../buttonloader/index.tsx'
+} from 'react-native';
+import { styles } from './styles';
+import { COLOR_SECONDARY } from '../../utils/colors';
+import ButtonLoader from '../buttonloader/index.tsx';
 
 interface ButtonProps extends TouchableOpacityProps {
   buttonStyle?: any
@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   isbuttonloader = false,
   testID,
 }) => {
-  const backgroundColorStyle = disabled ? styles.BGDisabled : styles.BGDefault
+  const backgroundColorStyle = disabled ? styles.BGDisabled : styles.BGDefault;
   return (
     <TouchableOpacity
       style={[styles.touchableHighlight, backgroundColorStyle, buttonStyle]}
@@ -44,7 +44,7 @@ const Button: React.FC<ButtonProps> = ({
         {isbuttonloader && <ButtonLoader isbuttonloader={isbuttonloader} />}
       </View>
     </TouchableOpacity>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

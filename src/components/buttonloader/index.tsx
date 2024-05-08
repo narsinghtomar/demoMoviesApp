@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { View, Animated, Easing, Image } from 'react-native'
+import { View, Animated, Easing } from 'react-native'
 import { IMAGES } from '../../assets'
 import { styles } from './styles'
 

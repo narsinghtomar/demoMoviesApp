@@ -10,7 +10,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/src/components/',
     '<rootDir>/src/utils/',
-    '<rootDir>/src/i18n'
+    '<rootDir>/src/i18n',
   ],
   coveragePathIgnorePatterns: [
     '<rootDir>/src/assets/',
@@ -20,6 +20,6 @@ module.exports = {
     '<rootDir>/src/components/buttons/index.ts',
     '<rootDir>/src/containers/index.ts',
     '<rootDir>/src/navigation/',
-    '<rootDir>/src/i18n'
+    '<rootDir>/src/i18n',
   ],
 };
